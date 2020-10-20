@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Open-Sanse;
+}
+/*.parallax{*/
+/*    !* The image used *!*/
+/*    background-image: url("https://images.unsplash.com/photo-1602608972277-52dd53006617?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");*/
+
+/*    !* Set a specific height *!*/
+/*    min-height: 500px;*/
+
+/*    !* Create the parallax scrolling effect *!*/
+/*    background-attachment: fixed;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*}*/
+/*p{*/
+/*    height:1000px;*/
+/*    background-color:red;*/
+/*    font-size:36px*/
+/*}*/
+/*header::before{*/
+/*    content: '';*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    z-index: -1;*/
+/*    transform-origin: center;*/
+/*    min-height: 100vh;*/
+/*    background-image: url("https://images.unsplash.com/photo-1602608972277-52dd53006617?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover;*/
+/*    transition: 1s;*/
+/*    transform: translateZ(-1px) scale(3);*/
+/*}*/
+.parallax {
+    /* The image used */
+    background-image: url("https://images.unsplash.com/photo-1602608972277-52dd53006617?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80");
+    /* Set a specific height */
+    min-height: 600px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-2 {
+    /* The image used */
+    background-image: url("//media.lpgenerator.ru/images/57561/fon2_XBYiU9d.jpg#size_3000x1500");
+
+    /* Set a specific height */
+    min-height: 400px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3{
+    /* The image used */
+    background-image: url("//media.lpgenerator.ru/images/57561/fon2_XBYiU9d.jpg#size_3000x1500");
+    /* Set a specific height */
+    min-height: 200px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 50%;
+}
+.parallax-3::before{
+    content: '';
+    position: absolute;
+    background: white;
+    opacity: 100%;
+    bottom: 0;
+}
+.logo  {
+    text-align: center;
+    color:white;
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
+.main{
+    border: solid 3px white ;
+    width: 40%;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+}
+.main h3{
+    font-weight: normal;
+    font-size: 30px;
+}
+.main h3 span{
+    font-weight: bold;
+    color: #feb422;
+}
+.main div{
+    background: white;
+    padding:40px 20px;
+}
+.main .btn{
+    color: white;
+    background: #feb422;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.logo span{
+    box-sizing: border-box;
+    border: solid 3px white;
+    font-weight: normal;
+    padding: 3px;
+
+}
+.second-page{
+    height:75vh;
+    text-align: center;
+    padding: 25px 15%;
+}
+.second-page h2{
+    font-weight: normal;
+    font-size: 30px;
+}
+.second-page h2 span{
+    font-weight: bold;
+    color: #feb422;
+}
+.second-page .box div{
+    padding: 10px;
+}
+.box{
+    display: flex;
+    align-items: baseline;
+}
+.parallax-2 div{
+    padding-top: 10%;
+    text-align: center;
+    color: white;
+}
+.parallax-2 div h2 span{
+    font-weight: bold;
+    font-size: 25px;
+}
+.parallax-2 div h2{
+    font-weight: normal;
+    font-size: 16px;
+}
+.parallax-2 div input{
+    padding:  15px 10px;
+    background: none;
+    border: solid 2px #feb422;
+    font-size: 18px;
+    color: white;
+}
+.parallax-2 div button{
+    color: white;
+    background: #feb422;
+    border: none;
+    padding:  17px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (min-width:350px) and (max-width:765px) {
+    .main{
+        border: solid 2px white ;
+        width: 80%;
+        margin: 0 auto;
+        padding: 5px;
+        text-align: center;
+    }
+    .second-page{
+        height: 100%;
+        text-align: center;
+        padding: 25px 15%;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+
+    }
+    .parallax-2 div{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        color: white;
+        padding-top: 20%;
+    }
+    .parallax-2 div button{
+        color: white;
+        background: #feb422;
+        border: none;
+        padding:  17px 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+
+.parallax-3{
+    min-height: 90px;
+}
+}
